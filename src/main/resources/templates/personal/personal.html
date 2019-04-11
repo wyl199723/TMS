@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>竖店电影城</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!--<script src="/js/jquery/jquery-3.1.1.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="/js/bootstrap/bootstrap.js"></script>
+
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/bootstrap-theme.css">
+	<!--自己的css样式-->
+	<!--<link rel="stylesheet" href="//at.alicdn.com/t/font_1127497_kxq903opfr.css">-->
+	<link rel="stylesheet" href="/css/myStyle.css">
+</head>
+<body>
+<nav class="navbar navbar-fixed-top my-navbar" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<div class="row">
+				<a class="glyphicon col-xs-1 glyphicon-cog" href="/tms/setting" style="color: #000;padding-left: 30px;"></a>
+				<strong class="col-xs-3" id="title-center" style="display: none;text-align: center;margin-left: 104px;">我&nbsp;&nbsp;&nbsp;&nbsp;的</strong>
+				<span class="glyphicon col-xs-1 glyphicon-envelope" style="float: right; padding-right: 50px;"></span>
+			</div>
+		</div>
+	</div>
+</nav>
+<script>
+    $(window).scroll(function () {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav");
+            $("#title-center").show();
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav");
+            $("#title-center").hide();
+        }
+    })
+</script>
+<div class="container-fluid">
+	<div class="row my-head" style="height: 200px;">
+		<!--<nav class="navbar navbar-default navbar-fixed-top back-opacity" style="">-->
+		<!--</nav>-->
+
+
+		<div class="col-xs-12" style="margin-top: 30px;margin-bottom: 20px;">
+			<div class="col-xs-4">
+				<img class="img-circle" alt="" style="height: 80px" src="/img/img2.jpg">
+			</div>
+			<div class="col-xs-8" style="margin-top: 10px;padding: 0">
+				<div class="col-xs-12">昵称user.nickname</div>
+				<div class="col-xs-12">456</div>
+			</div>
+		</div>
+	</div>
+	<div class="row text-center my-middle">
+		<div class="col-xs-3">
+			<a href="" style="color: black">
+				<span class="glyphicon glyphicon-align-justify"></span><br><span>全部订单</span>
+			</a>
+		</div>
+		<div class="col-xs-3">
+			<a href="" style="color: black">
+				<span class="glyphicon glyphicon-time"></span><br><span>待付款</span>
+			</a>
+		</div>
+		<div class="col-xs-3">
+			<a href="" style="color: black">
+				<i class=""></i><br><span>待使用</span>
+			</a>
+		</div>
+		<div class="col-xs-3">
+			<a href="" style="color: black">
+				<i class="glyphicon glyphicon-ok-circle"></i><br><span>待评价</span>
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 list-group my-list-group">
+			<a class="list-group-item">
+				<span>我的会员卡</span>
+				<span class="text-right my-middle-list" style="">2&nbsp;&nbsp;></span>
+			</a>
+			<a class="list-group-item">
+				<span>我的优惠券</span>
+				<span class="text-right my-middle-list" style="">8&nbsp;&nbsp;></span>
+			</a>
+			<a class="list-group-item">
+				<span>想看的电影</span>
+				<span class="text-right my-middle-list" style="">4&nbsp;&nbsp;></span>
+			</a>
+			<a class="list-group-item">
+				<span>看过的电影</span>
+				<span class="text-right my-middle-list" style="">14&nbsp;&nbsp;></span>
+			</a>
+			<a class="list-group-item"></a>
+			<a class="list-group-item">
+				<span>4</span>
+				<span class="text-right my-middle-list" style="">&nbsp;&nbsp;></span>
+			</a>
+			<a class="list-group-item">
+				<span>关于我们</span>
+				<span class="text-right my-middle-list" style="">&nbsp;&nbsp;></span>
+			</a>
+			<a class="list-group-item">
+				<span>关于我们</span>
+				<span class="text-right my-middle-list" style="">&nbsp;&nbsp;></span>
+			</a>
+			<a class="list-group-item">
+				<span>关于我们</span>
+				<span class="text-right my-middle-list" style="">&nbsp;&nbsp;></span>
+			</a>
+			<a class="list-group-item">
+				<span>关于我们</span>
+				<span class="text-right my-middle-list" style="">&nbsp;&nbsp;></span>
+			</a>
+		</div>
+	</div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+	<div class="container">
+		<ul class="nav navbar-inner navbar-nav text-center">
+			<li class="col-xs-4"><a href="/tms/index">首页</a></li>
+			<li class="col-xs-4"><a href="/tms/market">商城</a></li>
+			<li class="col-xs-4"><a href="/tms/personal">我的</a></li>
+		</ul>
+	</div>
+</nav>
+<!--Main angularJS script-->
+<!--<script src="/js/angular/angular.js"></script>-->
+<!--<script src="/js/angular/angular-animate.js"></script>-->
+<!--<script src="/js/angular/angular-aria.js"></script>-->
+<!--<script src="/js/angular/angular-cookies.js"></script>-->
+<!--<script src="/js/angular/angular-loader.js"></script>-->
+<!--<script src="/js/angular/angular-message-format.js"></script>-->
+<!--<script src="/js/angular/angular-messages.js"></script>-->
+<!--<script src="/js/angular/angular-mocks.js"></script>-->
+<!--<script src="/js/angular/angular-parse-ext.js"></script>-->
+<!--<script src="/js/angular/angular-resource.js"></script>-->
+<!--<script src="/js/angular/angular-route.js"></script>-->
+<!--<script src="/js/angular/angular-sanitize.js"></script>-->
+<!--<script src="/js/angular/angular-scenario.js"></script>-->
+<!--<script src="/js/angular/angular-touch.js"></script>-->
+<!--<script src="/js/ui-router/angular-ui-router.js"></script>-->
+
+<!--AngularJS App Script-->
+<!--<script src="/js/app.js"></script>-->
+<!--<script src="/js/config.js"></script>-->
+<!--<script src="/js/controllers.js"></script>-->
+<!--<script src="/js/directives.js"></script>-->
+<!--<script src="/js/filter.js"></script>-->
+<!--<script src="/js/service.js"></script>-->
+<!--<script src="/js/controller/personal/personalCtrl.js"></script>-->
+</body>
+</html>
