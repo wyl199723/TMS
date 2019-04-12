@@ -86,3 +86,56 @@ a.message {
 #goods-list > li {
     margin: 10px -5px;
 }
+#home-head > .row {
+    padding: 10px 0;
+}
+#home-head > .row:last-child {
+    padding-bottom: 0;
+}
+#home-head {
+    border-bottom: 1px solid #8c8c8c;
+    background-color: white;
+}
+#home-btn-group {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#home-btn-group > button {
+    height: 25px;
+    width: 74px;
+    padding-top: 3px;
+}
+#home-head > .row > .col-xs-3 {
+    padding-top: 4px;
+}
+#home-head > .row > .col-xs-3 > a {
+    color: black;
+  }
+.active-border:after {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    height: 4px;
+    width: 87px;
+    background-color: #8d37e9;
+}
+.buy-ticket {
+    margin-top: 20px;
+}
+#home-film-list {
+    border-top: 1px solid black;
+    border-top-left-radius: 10px;
+    /*border-top-right-radius: 20px;*/
+}
+#home-film-list > .list-group-item:first-child {
+    border-top: none;
+}
+#search-input{
+    background-color: white;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

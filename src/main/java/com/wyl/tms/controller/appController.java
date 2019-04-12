@@ -25,7 +25,7 @@ public class appController {
     }
 
     @RequestMapping("/market")
-    public  String foot(){
+    public  String market(){
         return "/market/market";
     }
     @RequestMapping("/personal")
@@ -35,13 +35,23 @@ public class appController {
 
 
     @RequestMapping("/setting")
-    public  String login(){
+    public  String setting(){
         return "/personal/setting";
     }
 
-    @RequestMapping("/register")
-    public  String register(){
-        return "/register";
+    @RequestMapping("/personInfo")
+    public  String personInfo(){
+        return "/personal/personInfo";
+    }
+
+    @RequestMapping("/theaterList")
+    public  String theaterList(){
+        return "/common/theaterList";
+    }
+
+    @RequestMapping("/search")
+    public String search() {
+        return "/common/search";
     }
 
     @RequestMapping("/defaultKaptcha")

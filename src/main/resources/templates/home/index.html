@@ -8,7 +8,7 @@
 	<script src="/js/jquery/jquery-3.1.1.min.js"></script>
 	<script src="/js/bootstrap/bootstrap.js"></script>
 	<!--阿里图标库-->
-	<script src="//at.alicdn.com/t/font_1135780_9bx3f92y98r.js"></script>
+	<script src="//at.alicdn.com/t/font_1135780_h4v4fbvm0kb.js"></script>
 
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/bootstrap-theme.css">
@@ -17,60 +17,186 @@
 </head>
 <body>
 <nav class="navbar navbar-fixed-top" role="navigation">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<div class="row text-center">
-				<div class="col-xs-3">
-					<a href="#">重庆▼</a>
-				</div>
-				<div class="col-xs-6">8</div>
-				<div class="col-xs-3">2</div>
+	<div id="home-head" class="container-fluid">
+		<div class="row text-center">
+			<div class="col-xs-3">
+				<a href="#">重庆▼</a>
 			</div>
-			<!--<a class="navbar-brand" href="#">菜鸟教程</a>-->
+			<div id="home-btn-group" class="col-xs-6 btn-group" role="group" aria-label="head">
+				<button type="button" class="btn btn-default active">电影</button>
+				<button type="button" class="btn btn-default">影院</button>
+			</div>
+			<div class="col-xs-3">
+				<a href="/tms/search">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-chazhao"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="row text-center" style="color: #0f0f0f;">
+			<!--<div class="col-xs-6" style="color: #8d37e9; border-bottom: 3px solid;padding-bottom: 10px;">正在热映</div>-->
+			<div class="col-xs-6 active-border" style="padding-bottom: 10px;color: #8d37e9;">正在热映</div>
+			<div class="col-xs-6">即将上映</div>
+			<div></div>
 		</div>
 	</div>
 </nav>
-<div class="container-fluid" style="padding-top: 70px;padding-bottom: 50px;">
-	<div class="row">
-		<div class="col-xs-12">图片轮播</div>
-	</div>
+<div class="container-fluid" style="padding-top: 95px;padding-bottom: 50px;">
+	<!--<div class="row">-->
+		<!--<div class="col-xs-12">图片轮播</div>-->
+	<!--</div>-->
 	<div class="row">
 		<div id="home-film-list" class="col-xs-12 list-group my-list-group">
-			<a class="list-group-item">
-				<span>我的会员卡</span>
+			<a class="list-group-item row">
+				<div class="col-xs-3" style="padding: 0;">
+					<img src="/img/img3.jpg" style="height: 100px;width: 70px;">
+				</div>
+				<div class="col-xs-9">
+					<div class="row">
+						<div class="col-xs-12">
+							<strong class="">反贪风暴4</strong>
+							<!--<span class="">电影名称</span>-->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-9">
+							<div class="row">
+								<div class="col-xs-12">评分&nbsp;8.8</div>
+								<div class="col-xs-12">导演:&nbsp;林德禄</div>
+								<div class="col-xs-12">主演:&nbsp;古天乐&nbsp;郑嘉颖&nbsp;林峯</div>
+							</div>
+						</div>
+						<div class="col-xs-3" style="padding: 0;">
+							<button type="button" class="buy-ticket"><span>购票</span></button>
+						</div>
+					</div>
+				</div>
 			</a>
-			<a class="list-group-item">
-				<span>我的会员卡</span>
+			<a class="list-group-item row">
+				<div class="col-xs-3" style="padding: 0;">
+					<img src="/img/img2.jpg" style="height: 100px;width: 70px;">
+				</div>
+				<div class="col-xs-9">
+					<div class="row">
+						<div class="col-xs-12">
+							<strong class="">电影名称</strong>
+							<!--<span class="">电影名称</span>-->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-9">
+							<div class="row">
+								<div class="col-xs-12">评分&nbsp;8.8</div>
+								<div class="col-xs-12">导演:&nbsp;去去去</div>
+								<div class="col-xs-12">主演:&nbsp;去去去&nbsp;哇哇哇</div>
+							</div>
+						</div>
+						<div class="col-xs-3" style="padding: 0;">
+							<button type="button" class="buy-ticket"><span>购票</span></button>
+						</div>
+					</div>
+				</div>
 			</a>
-			<a class="list-group-item">
-				<span>我的会员卡</span>
+			<a class="list-group-item row">
+				<div class="col-xs-3" style="padding: 0;">
+					<img src="/img/img2.jpg" style="height: 100px;width: 70px;">
+				</div>
+				<div class="col-xs-9">
+					<div class="row">
+						<div class="col-xs-12">
+							<strong class="">电影名称</strong>
+							<!--<span class="">电影名称</span>-->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-9">
+							<div class="row">
+								<div class="col-xs-12">评分&nbsp;8.8</div>
+								<div class="col-xs-12">导演:&nbsp;去去去</div>
+								<div class="col-xs-12">主演:&nbsp;去去去&nbsp;哇哇哇</div>
+							</div>
+						</div>
+						<div class="col-xs-3" style="padding: 0;">
+							<button type="button" class="buy-ticket"><span>购票</span></button>
+						</div>
+					</div>
+				</div>
 			</a>
-			<a class="list-group-item">
-				<span>我的会员卡</span>
+			<a class="list-group-item row">
+				<div class="col-xs-3" style="padding: 0;">
+					<img src="/img/img2.jpg" style="height: 100px;width: 70px;">
+				</div>
+				<div class="col-xs-9">
+					<div class="row">
+						<div class="col-xs-12">
+							<strong class="">电影名称</strong>
+							<!--<span class="">电影名称</span>-->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-9">
+							<div class="row">
+								<div class="col-xs-12">评分&nbsp;8.8</div>
+								<div class="col-xs-12">导演:&nbsp;去去去</div>
+								<div class="col-xs-12">主演:&nbsp;去去去&nbsp;哇哇哇</div>
+							</div>
+						</div>
+						<div class="col-xs-3" style="padding: 0;">
+							<button type="button" class="buy-ticket"><span>购票</span></button>
+						</div>
+					</div>
+				</div>
 			</a>
-			<a class="list-group-item">
-				<span>我的会员卡</span>
+			<a class="list-group-item row">
+				<div class="col-xs-3" style="padding: 0;">
+					<img src="/img/img2.jpg" style="height: 100px;width: 70px;">
+				</div>
+				<div class="col-xs-9">
+					<div class="row">
+						<div class="col-xs-12">
+							<strong class="">电影名称</strong>
+							<!--<span class="">电影名称</span>-->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-9">
+							<div class="row">
+								<div class="col-xs-12">评分&nbsp;8.8</div>
+								<div class="col-xs-12">导演:&nbsp;去去去</div>
+								<div class="col-xs-12">主演:&nbsp;去去去&nbsp;哇哇哇</div>
+							</div>
+						</div>
+						<div class="col-xs-3" style="padding: 0;">
+							<button type="button" class="buy-ticket"><span>购票</span></button>
+						</div>
+					</div>
+				</div>
 			</a>
-			<a class="list-group-item">
-				<span>我的会员卡</span>
-			</a>
-			<a class="list-group-item">
-				<span>我的会员卡</span>
-			</a>
-			<a class="list-group-item">
-				<span>我的会员卡</span>
-			</a>
-			<a class="list-group-item">
-				<span>我的会员卡</span>
-			</a>
-			<a class="list-group-item">
-				<span>我的会员卡</span>
-			</a>
-			<a class="list-group-item">
-				<span>我的会员卡</span>
-			</a>
-			<a class="list-group-item">
-				<span>我的会员卡</span>
+			<a class="list-group-item row">
+				<div class="col-xs-3" style="padding: 0;">
+					<img src="/img/img2.jpg" style="height: 100px;width: 70px;">
+				</div>
+				<div class="col-xs-9">
+					<div class="row">
+						<div class="col-xs-12">
+							<strong class="">电影名称</strong>
+							<!--<span class="">电影名称</span>-->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-9">
+							<div class="row">
+								<div class="col-xs-12">评分&nbsp;8.8</div>
+								<div class="col-xs-12">导演:&nbsp;去去去</div>
+								<div class="col-xs-12">主演:&nbsp;去去去&nbsp;哇哇哇</div>
+							</div>
+						</div>
+						<div class="col-xs-3" style="padding: 0;">
+							<button type="button" class="buy-ticket"><span>购票</span></button>
+						</div>
+					</div>
+				</div>
 			</a>
 		</div>
 	</div>
