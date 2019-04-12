@@ -1,3 +1,10 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
 .list-group-item{
     padding: 15px;
     border-width: 1px 0;
@@ -29,13 +36,53 @@
 /*div {font-family: "Kristen ITC";}*/
 html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%适应整个屏幕*/
 .bg {display: table;width: 100%;height: 100%;padding: 100px 0;text-align: center;color: #eeeeee;background: url(/img/img2.jpg) no-repeat bottom center;background-color: #eeeeee;background-size: cover;}
-.my-navbar {padding:15px 0;transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;}
+.my-navbar {padding:10px 0;transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;}
 .my-navbar a{background:transparent !important;color:#fff !important}
 .my-navbar a:hover {color:#45bcf9 !important;background:transparent;outline:0}
 .my-navbar a {transition: color 0.5s ease-in-out;}/*-webkit-transition ;-moz-transition*/
 .top-nav {
     /*padding:0;*/
     background:#ffffff;
+    border-bottom: 1px solid #8c8c8c;
 }
 button.navbar-toggle {background-color:#fbfbfb;}/*整个背景都是transparent透明的，会看不到，所以再次覆盖一下*/
 button.navbar-toggle > span.icon-bar {background-color:#dedede}
+#bottom-bar a {
+    padding: 8px 15px 5px 15px;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
+a.set {
+    padding-left: 30px;
+    padding-top: 5px;
+}
+a.message {
+    float: right;
+    padding-right: 30px;
+    padding-top: 3px;
+}
+.message > svg {
+    width: 22px;
+    height: 22px;
+    /*font-size: 22px;*/
+}
+#title-center {
+    display: none;
+    font-size:20px;
+    text-align: center;
+    margin-left: 104px;
+}
+.list-group-item {
+    padding: 20px 15px;
+}
+.color-gray {
+    background-color: #eeeeee;
+}
+.color-gray > a {
+    color: black;
+}
+#goods-list > li {
+    margin: 10px -5px;
+}
