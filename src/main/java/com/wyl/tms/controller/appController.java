@@ -54,6 +54,11 @@ public class appController {
         return "/common/search";
     }
 
+    @RequestMapping("/login")
+    public String login() {
+        return "/login";
+    }
+
     @RequestMapping("/defaultKaptcha")
     public void defaultKaptcha(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception{
         byte[] captchaChallengeAsJpeg = null;
