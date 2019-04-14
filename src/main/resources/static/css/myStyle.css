@@ -139,3 +139,13 @@ a.message {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+#login-list > .list-group-item {
+    padding: 10px;
+}
+#login-btn {
+    background-color: #7266ba;
+    border-color: #7266ba;
+    color: white;
+    border-radius: 2px;
+    opacity: 0.65;
+}
