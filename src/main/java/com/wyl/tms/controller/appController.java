@@ -28,11 +28,11 @@ public class appController {
     public  String market(){
         return "/market/market";
     }
+
     @RequestMapping("/personal")
     public  String personal(){
         return "/personal/personal";
     }
-
 
     @RequestMapping("/setting")
     public  String setting(){
@@ -42,6 +42,16 @@ public class appController {
     @RequestMapping("/personInfo")
     public  String personInfo(){
         return "/personal/personInfo";
+    }
+
+    @RequestMapping("/member")
+    public  String member(){
+        return "/personal/member";
+    }
+
+    @RequestMapping("/memberDetail")
+    public  String memberDetail(){
+        return "/personal/memberDetail";
     }
 
     @RequestMapping("/theaterList")
