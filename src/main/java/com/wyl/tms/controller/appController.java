@@ -54,6 +54,11 @@ public class appController {
         return "/personal/memberDetail";
     }
 
+    @RequestMapping("coupon")
+    public String coupon() {
+        return "/personal/coupon";
+    }
+
     @RequestMapping("/theaterList")
     public  String theaterList(){
         return "/common/theaterList";
